@@ -42,6 +42,9 @@
           <itemPath>include/opengsi/comsci/supports/basic_definition.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f3" displayName="utilities" projectFiles="true">
+          <itemPath>include/opengsi/comsci/utilities/TConstDummy.h</itemPath>
+          <itemPath>include/opengsi/comsci/utilities/TDummy.h</itemPath>
+          <itemPath>include/opengsi/comsci/utilities/dummy.h</itemPath>
           <itemPath>include/opengsi/comsci/utilities/loop.h</itemPath>
         </logicalFolder>
         <itemPath>include/opengsi/comsci/GObject</itemPath>
@@ -89,10 +92,14 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <cTool>
+          <warningLevel>2</warningLevel>
+        </cTool>
         <ccTool>
           <incDir>
             <pElem>include</pElem>
           </incDir>
+          <warningLevel>2</warningLevel>
         </ccTool>
       </compileType>
       <item path="include/opengsi/GsiObject" ex="false" tool="3" flavor2="0">
@@ -182,6 +189,21 @@
             flavor2="0">
       </item>
       <item path="include/opengsi/comsci/supports/macros/stdint_h_files/stdint_size.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/opengsi/comsci/utilities/TConstDummy.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/opengsi/comsci/utilities/TDummy.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/opengsi/comsci/utilities/dummy.h"
             ex="false"
             tool="3"
             flavor2="0">
@@ -311,6 +333,21 @@
             flavor2="0">
       </item>
       <item path="include/opengsi/comsci/supports/macros/stdint_h_files/stdint_size.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/opengsi/comsci/utilities/TConstDummy.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/opengsi/comsci/utilities/TDummy.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/opengsi/comsci/utilities/dummy.h"
             ex="false"
             tool="3"
             flavor2="0">

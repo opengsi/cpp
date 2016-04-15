@@ -15,7 +15,7 @@ NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
 OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libopengsi-dynamic-cpp.${CND_DLIB_EXT}
 OUTPUT_BASENAME=libopengsi-dynamic-cpp.${CND_DLIB_EXT}
-PACKAGE_TOP_DIR=libopengsi-dynamic-cpp.so/
+PACKAGE_TOP_DIR=libopengsi.so/
 
 # Functions
 function checkReturnCode
@@ -60,7 +60,7 @@ mkdir -p ${NBTMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory "${NBTMPDIR}/libopengsi-dynamic-cpp.so/lib"
+makeDirectory "${NBTMPDIR}/libopengsi.so/lib"
 copyFileToTmpDir "${OUTPUT_PATH}" "${NBTMPDIR}/${PACKAGE_TOP_DIR}lib/${OUTPUT_BASENAME}" 0644
 
 
