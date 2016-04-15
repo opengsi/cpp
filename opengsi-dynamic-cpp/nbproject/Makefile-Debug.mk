@@ -35,7 +35,6 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/include/opengsi/comsci/supports/macros/char_type.o \
 	${OBJECTDIR}/src/comsci/GObject.o \
 	${OBJECTDIR}/src/comsci/supports/macros/char_type.o
 
@@ -63,11 +62,6 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libopengsi-dynamic-cpp.${CND_DLIB_EXT}: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libopengsi-dynamic-cpp.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -shared -fPIC
-
-${OBJECTDIR}/include/opengsi/comsci/supports/macros/char_type.o: include/opengsi/comsci/supports/macros/char_type.cpp 
-	${MKDIR} -p ${OBJECTDIR}/include/opengsi/comsci/supports/macros
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -Iinclude -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/include/opengsi/comsci/supports/macros/char_type.o include/opengsi/comsci/supports/macros/char_type.cpp
 
 ${OBJECTDIR}/src/comsci/GObject.o: src/comsci/GObject.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src/comsci

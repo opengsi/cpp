@@ -50,7 +50,7 @@
  *  @author Young-Mook Kang
  */
 
-// The Definiction of Variable Types
+// The Definition of Variable Types
 
 OPENGSI_BEGIN_NAMESPACE
 typedef bool               CppBool;

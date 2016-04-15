@@ -28,12 +28,12 @@
 
 OPENGSI_BEGIN_NAMESPACE 
 
-GObject::BasicString GObject::toString() const {
-    return this->getClassName();
+GObject::BasicString GObject::getClassName() const { 
+    return "GObject";
 }
 
-GObject::BasicString GObject::getClassName() const {
-    return "GObject";
+GObject::BasicString GObject::toString() const {
+    return this->getClassName();
 }
 
 GObject::BaseIStream& GObject::_readStream(BaseIStream& theStream) {

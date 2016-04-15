@@ -12,6 +12,10 @@
       <logicalFolder name="f2" displayName="chem" projectFiles="true">
       </logicalFolder>
       <logicalFolder name="f1" displayName="comsci" projectFiles="true">
+        <logicalFolder name="f2" displayName="smart_pointers" projectFiles="true">
+          <itemPath>include/opengsi/comsci/smart_pointers/TShared.h</itemPath>
+          <itemPath>include/opengsi/comsci/smart_pointers/TSharedTraits.h</itemPath>
+        </logicalFolder>
         <logicalFolder name="f1" displayName="supports" projectFiles="true">
           <logicalFolder name="f1" displayName="macros" projectFiles="true">
             <logicalFolder name="f2" displayName="compilers" projectFiles="true">
@@ -55,7 +59,6 @@
       <logicalFolder name="f1" displayName="comsci" projectFiles="true">
         <logicalFolder name="f1" displayName="supports" projectFiles="true">
           <logicalFolder name="f1" displayName="macros" projectFiles="true">
-            <itemPath>include/opengsi/comsci/supports/macros/char_type.cpp</itemPath>
             <itemPath>src/comsci/supports/macros/char_type.cpp</itemPath>
           </logicalFolder>
         </logicalFolder>
@@ -95,14 +98,19 @@
       </item>
       <item path="include/opengsi/comsci/GObject.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/opengsi/comsci/supports/basic_definition.h"
+      <item path="include/opengsi/comsci/smart_pointers/TShared.h"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="include/opengsi/comsci/supports/macros/char_type.cpp"
+      <item path="include/opengsi/comsci/smart_pointers/TSharedTraits.h"
             ex="false"
-            tool="1"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/opengsi/comsci/supports/basic_definition.h"
+            ex="false"
+            tool="3"
             flavor2="0">
       </item>
       <item path="include/opengsi/comsci/supports/macros/char_type.h"
@@ -214,14 +222,19 @@
       </item>
       <item path="include/opengsi/comsci/GObject.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/opengsi/comsci/supports/basic_definition.h"
+      <item path="include/opengsi/comsci/smart_pointers/TShared.h"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="include/opengsi/comsci/supports/macros/char_type.cpp"
+      <item path="include/opengsi/comsci/smart_pointers/TSharedTraits.h"
             ex="false"
-            tool="1"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/opengsi/comsci/supports/basic_definition.h"
+            ex="false"
+            tool="3"
             flavor2="0">
       </item>
       <item path="include/opengsi/comsci/supports/macros/char_type.h"

@@ -43,9 +43,7 @@
 OPENGSI_BEGIN_NAMESPACE
 
 class GObject {
-
-    __OPENGSI_DEFINITION_OF_DEFAULT_TYPES__(GObject);
-
+    
 public:
 
     typedef supports::BasicString        BasicString;
@@ -55,11 +53,15 @@ public:
     typedef supports::BasicOStringStream BasicOStringStream;
     typedef supports::BasicStringStream  BasicStringStream;
     
+private:
     
+    __OPENGSI_DEFINITION_OF_DEFAULT_TYPES__(GObject);
+
+public:
+   
     GObject() {}
     virtual ~GObject() {}
-
-    virtual BasicString getClassName() const ;
+    virtual BasicString getClassName() const;
     virtual BasicString toString() const ;
     
     friend inline BaseOStream &
@@ -70,7 +72,7 @@ public:
 
 protected:
     
-    inline void _printMessage(const BasicString &, const BasicString &) const; 
+    void _printMessage(const BasicString &, const BasicString &) const; 
     virtual BaseIStream & _readStream(BaseIStream &theStream);
     
 private:    
