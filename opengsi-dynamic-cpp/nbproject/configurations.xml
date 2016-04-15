@@ -4,6 +4,9 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <logicalFolder name="f6" displayName="__Root" projectFiles="true">
+        <itemPath>include/opengsi/GsiObject.h</itemPath>
+      </logicalFolder>
       <logicalFolder name="f5" displayName="bioinfo" projectFiles="true">
       </logicalFolder>
       <logicalFolder name="f2" displayName="chem" projectFiles="true">
@@ -34,6 +37,7 @@
           </logicalFolder>
           <itemPath>include/opengsi/comsci/supports/basic_definition.h</itemPath>
         </logicalFolder>
+        <itemPath>include/opengsi/comsci/GObject</itemPath>
         <itemPath>include/opengsi/comsci/GObject.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f4" displayName="math" projectFiles="true">
@@ -85,6 +89,10 @@
           </incDir>
         </ccTool>
       </compileType>
+      <item path="include/opengsi/GsiObject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/opengsi/comsci/GObject" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/opengsi/comsci/GObject.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/opengsi/comsci/supports/basic_definition.h"
@@ -200,6 +208,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="include/opengsi/GsiObject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/opengsi/comsci/GObject" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/opengsi/comsci/GObject.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/opengsi/comsci/supports/basic_definition.h"
