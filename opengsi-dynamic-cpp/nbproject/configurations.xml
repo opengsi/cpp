@@ -32,6 +32,7 @@
             <itemPath>include/opengsi/comsci/supports/macros/posix.h</itemPath>
             <itemPath>include/opengsi/comsci/supports/macros/stdcpp.h</itemPath>
           </logicalFolder>
+          <itemPath>include/opengsi/comsci/supports/basic_definition.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f4" displayName="math" projectFiles="true">
@@ -76,6 +77,11 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="include/opengsi/comsci/supports/basic_definition.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="include/opengsi/comsci/supports/macros/char_type.cpp"
             ex="false"
             tool="1"
@@ -172,6 +178,11 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="include/opengsi/comsci/supports/basic_definition.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="include/opengsi/comsci/supports/macros/char_type.cpp"
             ex="false"
             tool="1"
