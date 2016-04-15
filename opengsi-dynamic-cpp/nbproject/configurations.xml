@@ -5,7 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="f6" displayName="__Root" projectFiles="true">
-        <itemPath>include/opengsi/GsiObject.h</itemPath>
+        <itemPath>include/opengsi/GsiObject</itemPath>
       </logicalFolder>
       <logicalFolder name="f5" displayName="bioinfo" projectFiles="true">
       </logicalFolder>
@@ -89,7 +89,7 @@
           </incDir>
         </ccTool>
       </compileType>
-      <item path="include/opengsi/GsiObject.h" ex="false" tool="3" flavor2="0">
+      <item path="include/opengsi/GsiObject" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/opengsi/comsci/GObject" ex="false" tool="3" flavor2="0">
       </item>
@@ -208,7 +208,7 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="include/opengsi/GsiObject.h" ex="false" tool="3" flavor2="0">
+      <item path="include/opengsi/GsiObject" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/opengsi/comsci/GObject" ex="false" tool="3" flavor2="0">
       </item>
