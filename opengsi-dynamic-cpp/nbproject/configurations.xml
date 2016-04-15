@@ -21,6 +21,7 @@
             <logicalFolder name="f3" displayName="stdint_h_files" projectFiles="true">
             </logicalFolder>
             <itemPath>include/opengsi/comsci/supports/macros/opengsi_macro.h</itemPath>
+            <itemPath>include/opengsi/comsci/supports/macros/os_macro.h</itemPath>
           </logicalFolder>
         </logicalFolder>
       </logicalFolder>
@@ -79,6 +80,11 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="include/opengsi/comsci/supports/macros/os_macro.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="2">
       <toolsSet>
@@ -116,6 +122,11 @@
             flavor2="0">
       </item>
       <item path="include/opengsi/comsci/supports/macros/operating_systems/mswindows.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/opengsi/comsci/supports/macros/os_macro.h"
             ex="false"
             tool="3"
             flavor2="0">
