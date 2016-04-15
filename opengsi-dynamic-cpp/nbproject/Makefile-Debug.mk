@@ -35,7 +35,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/include/opengsi/comsci/supports/macros/char_type.o
+	${OBJECTDIR}/include/opengsi/comsci/supports/macros/char_type.o \
+	${OBJECTDIR}/src/comsci/GObject.o \
+	${OBJECTDIR}/src/comsci/supports/macros/char_type.o
 
 
 # C Compiler Flags
@@ -65,7 +67,17 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libopengsi-dynamic-cpp.${CND_DLIB_EXT
 ${OBJECTDIR}/include/opengsi/comsci/supports/macros/char_type.o: include/opengsi/comsci/supports/macros/char_type.cpp 
 	${MKDIR} -p ${OBJECTDIR}/include/opengsi/comsci/supports/macros
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/include/opengsi/comsci/supports/macros/char_type.o include/opengsi/comsci/supports/macros/char_type.cpp
+	$(COMPILE.cc) -g -Iinclude -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/include/opengsi/comsci/supports/macros/char_type.o include/opengsi/comsci/supports/macros/char_type.cpp
+
+${OBJECTDIR}/src/comsci/GObject.o: src/comsci/GObject.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/comsci
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Iinclude -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/comsci/GObject.o src/comsci/GObject.cpp
+
+${OBJECTDIR}/src/comsci/supports/macros/char_type.o: src/comsci/supports/macros/char_type.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/comsci/supports/macros
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Iinclude -include include/opengsi/comsci/supports/macros/char_type.h -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/comsci/supports/macros/char_type.o src/comsci/supports/macros/char_type.cpp
 
 # Subprojects
 .build-subprojects:
