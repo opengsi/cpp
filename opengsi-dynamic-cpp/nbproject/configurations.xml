@@ -25,6 +25,7 @@
               <itemPath>include/opengsi/comsci/supports/macros/stdint_h_files/stdint_msc.h</itemPath>
               <itemPath>include/opengsi/comsci/supports/macros/stdint_h_files/stdint_size.h</itemPath>
             </logicalFolder>
+            <itemPath>include/opengsi/comsci/supports/macros/char_type.h</itemPath>
             <itemPath>include/opengsi/comsci/supports/macros/compiler.h</itemPath>
             <itemPath>include/opengsi/comsci/supports/macros/opengsi_macro.h</itemPath>
             <itemPath>include/opengsi/comsci/supports/macros/os_macro.h</itemPath>
@@ -45,6 +46,13 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="f1" displayName="comsci" projectFiles="true">
+        <logicalFolder name="f1" displayName="supports" projectFiles="true">
+          <logicalFolder name="f1" displayName="macros" projectFiles="true">
+            <itemPath>include/opengsi/comsci/supports/macros/char_type.cpp</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -68,6 +76,16 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="include/opengsi/comsci/supports/macros/char_type.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="include/opengsi/comsci/supports/macros/char_type.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="include/opengsi/comsci/supports/macros/compiler.h"
             ex="false"
             tool="3"
@@ -154,6 +172,16 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="include/opengsi/comsci/supports/macros/char_type.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="include/opengsi/comsci/supports/macros/char_type.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="include/opengsi/comsci/supports/macros/compiler.h"
             ex="false"
             tool="3"
