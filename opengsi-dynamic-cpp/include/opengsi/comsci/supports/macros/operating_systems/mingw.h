@@ -18,7 +18,7 @@
  */
 
 /* 
- * File:   opengsi_macro.h
+ * File:   mingw.h
  * Author: Young-Mook Kang <youngmook@opengsi.org>
  * 
  * Library  : Open General Scientific Interfaces(GSI)
@@ -27,42 +27,26 @@
  * License  : LGPL 2.1
  */
 
-#ifndef __OPEN_GSI_COMSCI_SUPPORTS_MACROS_OPENGSI_MACRO_H_
-#define __OPEN_GSI_COMSCI_SUPPORTS_MACROS_OPENGSI_MACRO_H_
+#ifndef __OPEN_GSI_COMSCI_SUPPORTS_MACROS_OPERATING_SYSTEMS_MINGW_H_
+#define __OPEN_GSI_COMSCI_SUPPORTS_MACROS_OPERATING_SYSTEMS_MINGW_H_
 
 // MS compatible compilers support #pragma once
 #if defined(_MSC_VER) && (_MSC_VER >= 1020)
 #pragma once
 #endif
 
-# define __OPENGSI__                      1
-# define __OPENGSI_MAJOR__      __OPENGSI__
-# define __OPENGSI_MINOR__                0
-# define __OPENGSI_PATCHLEVEL__           0
-# define OPENGSI_VER   (__OPENGSI_MAJOR__ * 10000 \
-                       +__OPENGSI_MINOR__ * 100   \
-                       +__OPENGSI_PATCHLEVEL__    )
+// header files
+#include "../opengsi_macro.h"
 
-# define OPENGSI_TRUE               1
-# define OPENGSI_FALSE              0
-
-# define OPENGSI_NAMESPACE opengsi
-# define OPENGSI_GUI_NAMESPACE gui 
-
-# ifdef OPENGSI_NAMESPACE
-#  define OPENGSI_BEGIN_NAMESPACE namespace OPENGSI_NAMESPACE {
-#  define OPENGSI_END_NAMESPACE }
-# else
-#  define OPENGSI_BEGIN_NAMESPACE
-#  define OPENGSI_END_NAMESPACE
-#endif
-
-# ifndef OPENGSI_HAS_NO_ROOT_GSI_OBJECTS
-#  define OPENGSI_BEGIN_FUNC_NAMESPACE 
-#  define OPENGSI_END_FUNC_NAMESPACE   
-# else
-#  define OPENGSI_BEGIN_FUNC_NAMESPACE OPENGSI_BEGIN_NAMESPACE 
-#  define OPENGSI_END_FUNC_NAMESPACE   OPENGSI_END_NAMESPACE 
+# if defined(__MINGW32__) || defined(__MINGW64__)
+#  ifndef  OPENGSI_USE_MINGW
+#   define OPENGSI_USE_MINGW OPENGSI_TRUE
+#  endif
+#  ifdef __MINGW64__
+#   ifndef  OPENGSI_USE_64BIT
+#    define OPENGSI_USE_64BIT OPENGSI_TRUE
+#   endif
+#  endif
 # endif
 
-#endif  /* __OPEN_GSI_COMSCI_SUPPORTS_MACROS_OPENGSI_MACRO_H_ */
+#endif  /* __OPEN_GSI_COMSCI_SUPPORTS_MACROS_OPERATING_SYSTEMS_MINGW_H_ */
