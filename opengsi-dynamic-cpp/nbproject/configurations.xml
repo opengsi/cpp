@@ -12,6 +12,11 @@
       <logicalFolder name="f2" displayName="chem" projectFiles="true">
       </logicalFolder>
       <logicalFolder name="f1" displayName="comsci" projectFiles="true">
+        <logicalFolder name="f4" displayName="functions" projectFiles="true">
+          <logicalFolder name="f1" displayName="converters" projectFiles="true">
+            <itemPath>include/opengsi/comsci/functions/converters/toIndex.h</itemPath>
+          </logicalFolder>
+        </logicalFolder>
         <logicalFolder name="f2" displayName="smart_pointers" projectFiles="true">
           <itemPath>include/opengsi/comsci/smart_pointers/TShared.h</itemPath>
           <itemPath>include/opengsi/comsci/smart_pointers/TSharedTraits.h</itemPath>
@@ -63,6 +68,11 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="f1" displayName="comsci" projectFiles="true">
+        <logicalFolder name="f2" displayName="functions" projectFiles="true">
+          <logicalFolder name="f1" displayName="converters" projectFiles="true">
+            <itemPath>src/comsci/functions/converters/toIndex.cpp</itemPath>
+          </logicalFolder>
+        </logicalFolder>
         <logicalFolder name="f1" displayName="supports" projectFiles="true">
           <logicalFolder name="f1" displayName="macros" projectFiles="true">
             <itemPath>src/comsci/supports/macros/char_type.cpp</itemPath>
@@ -108,6 +118,11 @@
       </item>
       <item path="include/opengsi/comsci/GObject.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/opengsi/comsci/functions/converters/toIndex.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="include/opengsi/comsci/smart_pointers/TShared.h"
             ex="false"
             tool="3"
@@ -214,6 +229,11 @@
             flavor2="0">
       </item>
       <item path="src/comsci/GObject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/comsci/functions/converters/toIndex.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
       </item>
       <item path="src/comsci/supports/macros/char_type.cpp"
             ex="false"
@@ -252,6 +272,11 @@
       </item>
       <item path="include/opengsi/comsci/GObject.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/opengsi/comsci/functions/converters/toIndex.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="include/opengsi/comsci/smart_pointers/TShared.h"
             ex="false"
             tool="3"
@@ -358,6 +383,11 @@
             flavor2="0">
       </item>
       <item path="src/comsci/GObject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/comsci/functions/converters/toIndex.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
       </item>
       <item path="src/comsci/supports/macros/char_type.cpp"
             ex="false"

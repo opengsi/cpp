@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/src/comsci/GObject.o \
+	${OBJECTDIR}/src/comsci/functions/converters/toIndex.o \
 	${OBJECTDIR}/src/comsci/supports/macros/char_type.o
 
 
@@ -67,6 +68,11 @@ ${OBJECTDIR}/src/comsci/GObject.o: src/comsci/GObject.cpp
 	${MKDIR} -p ${OBJECTDIR}/src/comsci
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Wall -Iinclude -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/comsci/GObject.o src/comsci/GObject.cpp
+
+${OBJECTDIR}/src/comsci/functions/converters/toIndex.o: src/comsci/functions/converters/toIndex.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/comsci/functions/converters
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Wall -Iinclude -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/comsci/functions/converters/toIndex.o src/comsci/functions/converters/toIndex.cpp
 
 ${OBJECTDIR}/src/comsci/supports/macros/char_type.o: src/comsci/supports/macros/char_type.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src/comsci/supports/macros
