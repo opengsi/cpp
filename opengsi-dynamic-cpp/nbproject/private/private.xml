@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <data xmlns="http://www.netbeans.org/ns/make-project-private/1">
+        <activeConfTypeElem>2</activeConfTypeElem>
+        <activeConfIndexElem>0</activeConfIndexElem>
+    </data>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/supports/macros/stdcpp.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/supports/macros/char_type.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/supports/macros/operating_systems/mingw.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/smart_pointers/TSharedTraits.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/supports/macros/opengsi_macro.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/supports/macros/os_macro.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/supports/macros/compilers/msc.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/supports/macros/stdint_h_files/basic_int_type.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/supports/macros/stdint_h_files/stdint_msc.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/supports/macros/stdint_h_files/stdint_size.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/GsiObject</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/supports/macros/operating_systems/linux.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/supports/basic_definition.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/supports/macros/operating_systems/mswindows.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/supports/macros/compiler.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/supports/macros/posix.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/GObject.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/GObject</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/smart_pointers/TShared.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/include/opengsi/comsci/supports/macros/compilers/gnu.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/src/comsci/GObject.cpp</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-dynamic-cpp/src/comsci/supports/macros/char_type.cpp</file>
+        </group>
+    </open-files>
+</project-private>

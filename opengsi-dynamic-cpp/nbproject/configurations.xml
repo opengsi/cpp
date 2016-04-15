@@ -41,6 +41,9 @@
           </logicalFolder>
           <itemPath>include/opengsi/comsci/supports/basic_definition.h</itemPath>
         </logicalFolder>
+        <logicalFolder name="f3" displayName="utilities" projectFiles="true">
+          <itemPath>include/opengsi/comsci/utilities/loop.h</itemPath>
+        </logicalFolder>
         <itemPath>include/opengsi/comsci/GObject</itemPath>
         <itemPath>include/opengsi/comsci/GObject.h</itemPath>
       </logicalFolder>
@@ -183,6 +186,11 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="include/opengsi/comsci/utilities/loop.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="src/comsci/GObject.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/comsci/supports/macros/char_type.cpp"
@@ -303,6 +311,11 @@
             flavor2="0">
       </item>
       <item path="include/opengsi/comsci/supports/macros/stdint_h_files/stdint_size.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/opengsi/comsci/utilities/loop.h"
             ex="false"
             tool="3"
             flavor2="0">
