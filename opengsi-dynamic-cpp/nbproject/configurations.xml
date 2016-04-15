@@ -28,6 +28,7 @@
             <itemPath>include/opengsi/comsci/supports/macros/compiler.h</itemPath>
             <itemPath>include/opengsi/comsci/supports/macros/opengsi_macro.h</itemPath>
             <itemPath>include/opengsi/comsci/supports/macros/os_macro.h</itemPath>
+            <itemPath>include/opengsi/comsci/supports/macros/posix.h</itemPath>
             <itemPath>include/opengsi/comsci/supports/macros/stdcpp.h</itemPath>
           </logicalFolder>
         </logicalFolder>
@@ -103,6 +104,11 @@
             flavor2="0">
       </item>
       <item path="include/opengsi/comsci/supports/macros/os_macro.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/opengsi/comsci/supports/macros/posix.h"
             ex="false"
             tool="3"
             flavor2="0">
@@ -184,6 +190,11 @@
             flavor2="0">
       </item>
       <item path="include/opengsi/comsci/supports/macros/os_macro.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/opengsi/comsci/supports/macros/posix.h"
             ex="false"
             tool="3"
             flavor2="0">

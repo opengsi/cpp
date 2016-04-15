@@ -172,8 +172,7 @@ namespace supports { namespace int_types {
 #  endif
 # endif
         
-    }
-}
+}}
 
 OPENGSI_END_NAMESPACE
 
