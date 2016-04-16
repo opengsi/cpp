@@ -34,7 +34,10 @@ include Makefile
 OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
-OBJECTFILES=
+OBJECTFILES= \
+	${OBJECTDIR}/src/comsci/GObject.o \
+	${OBJECTDIR}/src/comsci/functions/converters/toIndex.o \
+	${OBJECTDIR}/src/comsci/supports/macros/char_type.o
 
 
 # C Compiler Flags
@@ -59,7 +62,22 @@ LDLIBSOPTIONS=
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libopengsi-dynamic-cpp.${CND_DLIB_EXT}: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libopengsi-dynamic-cpp.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -shared -fPIC
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libopengsi-dynamic-cpp.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -shared -fPIC
+
+${OBJECTDIR}/src/comsci/GObject.o: src/comsci/GObject.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/comsci
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Wall -Iinclude -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/comsci/GObject.o src/comsci/GObject.cpp
+
+${OBJECTDIR}/src/comsci/functions/converters/toIndex.o: src/comsci/functions/converters/toIndex.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/comsci/functions/converters
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Wall -Iinclude -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/comsci/functions/converters/toIndex.o src/comsci/functions/converters/toIndex.cpp
+
+${OBJECTDIR}/src/comsci/supports/macros/char_type.o: src/comsci/supports/macros/char_type.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/comsci/supports/macros
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Wall -Iinclude -include include/opengsi/comsci/supports/macros/char_type.h -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/comsci/supports/macros/char_type.o src/comsci/supports/macros/char_type.cpp
 
 # Subprojects
 .build-subprojects:
