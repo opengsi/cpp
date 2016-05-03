@@ -7,6 +7,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-static-cpp/include/opengsi/comsci/functions/converters/numberToBasicString.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-static-cpp/include/opengsi/comsci/smart_pointers/TShared.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-static-cpp/include/opengsi/comsci/GObject.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-static-cpp/include/opengsi/comsci/utilities/TConstDummy.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-static-cpp/include/opengsi/comsci/utilities/loop.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-static-cpp/include/opengsi/comsci/utilities/TDummy.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-static-cpp/include/opengsi/comsci/GObject</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-static-cpp/include/opengsi/comsci/utilities/dummy.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-static-cpp/include/opengsi/comsci/functions/converters/toIndex.h</file>
+            <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-static-cpp/include/opengsi/comsci/smart_pointers/TSharedTraits.h</file>
             <file>file:/home/youngmook/NetBeansProjects/opengsi/opengsi-static-cpp/Makefile</file>
         </group>
     </open-files>

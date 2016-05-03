@@ -32,12 +32,13 @@
 #endif
 
 // include files
-# include <sstream>
-# include "../../supports/basic_definition.h"
+#include <sstream>
+#include "../../supports/basic_definition.h"
 
 OPENGSI_BEGIN_FUNC_NAMESPACE
-namespace gsiConvert {
+        namespace gsiConvert {
     namespace temp_functions {
+
         template<typename _AnyType>
         OPENGSI_NAMESPACE::supports::BasicString
         __valueToBasicString(const _AnyType &theValue) {
@@ -45,44 +46,108 @@ namespace gsiConvert {
             localBuffer << theValue;
             return localBuffer.str();
         }
-        
+
         template<typename _AnyType>
         const OPENGSI_NAMESPACE::supports::BasicString &
         __valueToBasicString(const _AnyType &theValue,
-                             OPENGSI_NAMESPACE::supports::BasicString &theString) {
+                OPENGSI_NAMESPACE::supports::BasicString &theString) {
             std::ostringstream localBuffer;
             localBuffer << theValue;
             return theString = localBuffer.str();
-        }        
+        }
     }
 
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppShort);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppUShort);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppInt);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppUInt);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppLong);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppULong);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppFloat);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppDouble);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppLDouble);
-# ifdef OPENGSI_ENABLE_LLONG
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppLLong);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppULLong);
-# endif   
-    
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppShort,  OPENGSI_NAMESPACE::supports::BasicString&);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppUShort, OPENGSI_NAMESPACE::supports::BasicString&);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppInt,    OPENGSI_NAMESPACE::supports::BasicString&);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppUInt,   OPENGSI_NAMESPACE::supports::BasicString&);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppLong,   OPENGSI_NAMESPACE::supports::BasicString&);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppULong,  OPENGSI_NAMESPACE::supports::BasicString&);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppFloat,  OPENGSI_NAMESPACE::supports::BasicString&);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppDouble, OPENGSI_NAMESPACE::supports::BasicString&);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppLDouble,OPENGSI_NAMESPACE::supports::BasicString&);
-# ifdef OPENGSI_ENABLE_LLONG
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppLLong,  OPENGSI_NAMESPACE::supports::BasicString&);
-    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppULLong, OPENGSI_NAMESPACE::supports::BasicString&);
-# endif       
+    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppShort theValue) {
+        return temp_functions::__valueToBasicString(theValue);
+    }
+
+    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppUShort theValue) {
+        return temp_functions::__valueToBasicString(theValue);
+    }
+
+    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppInt theValue) {
+        return temp_functions::__valueToBasicString(theValue);
+    }
+
+    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppUInt theValue) {
+        return temp_functions::__valueToBasicString(theValue);
+    }
+
+    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppLong theValue) {
+        return temp_functions::__valueToBasicString(theValue);
+    }
+
+    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppULong theValue) {
+        return temp_functions::__valueToBasicString(theValue);
+    }
+
+    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppFloat theValue) {
+        return temp_functions::__valueToBasicString(theValue);
+    }
+
+    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppDouble theValue) {
+        return temp_functions::__valueToBasicString(theValue);
+    }
+
+    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppLDouble theValue) {
+        return temp_functions::__valueToBasicString(theValue);
+    }
+#ifdef OPENGSI_ENABLE_LLONG
+
+    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppLLong theValue) {
+        return temp_functions::__valueToBasicString(theValue);
+    }
+
+    OPENGSI_NAMESPACE::supports::BasicString numberToBasicString(OPENGSI_NAMESPACE::CppULLong theValue) {
+        return temp_functions::__valueToBasicString(theValue);
+    }
+#endif   
+
+    const OPENGSI_NAMESPACE::supports::BasicString& numberToBasicString(OPENGSI_NAMESPACE::CppShort theValue, OPENGSI_NAMESPACE::supports::BasicString& theString) {
+        return temp_functions::__valueToBasicString(theValue, theString);
+    }
+
+    const OPENGSI_NAMESPACE::supports::BasicString& numberToBasicString(OPENGSI_NAMESPACE::CppUShort theValue, OPENGSI_NAMESPACE::supports::BasicString& theString) {
+        return temp_functions::__valueToBasicString(theValue, theString);
+    }
+
+    const OPENGSI_NAMESPACE::supports::BasicString& numberToBasicString(OPENGSI_NAMESPACE::CppInt theValue, OPENGSI_NAMESPACE::supports::BasicString& theString) {
+        return temp_functions::__valueToBasicString(theValue, theString);
+    }
+
+    const OPENGSI_NAMESPACE::supports::BasicString& numberToBasicString(OPENGSI_NAMESPACE::CppUInt theValue, OPENGSI_NAMESPACE::supports::BasicString& theString) {
+        return temp_functions::__valueToBasicString(theValue, theString);
+    }
+
+    const OPENGSI_NAMESPACE::supports::BasicString& numberToBasicString(OPENGSI_NAMESPACE::CppLong theValue, OPENGSI_NAMESPACE::supports::BasicString& theString) {
+        return temp_functions::__valueToBasicString(theValue, theString);
+    }
+
+    const OPENGSI_NAMESPACE::supports::BasicString& numberToBasicString(OPENGSI_NAMESPACE::CppULong theValue, OPENGSI_NAMESPACE::supports::BasicString& theString) {
+        return temp_functions::__valueToBasicString(theValue, theString);
+    }
+
+    const OPENGSI_NAMESPACE::supports::BasicString& numberToBasicString(OPENGSI_NAMESPACE::CppFloat theValue, OPENGSI_NAMESPACE::supports::BasicString& theString) {
+        return temp_functions::__valueToBasicString(theValue, theString);
+    }
+
+    const OPENGSI_NAMESPACE::supports::BasicString& numberToBasicString(OPENGSI_NAMESPACE::CppDouble theValue, OPENGSI_NAMESPACE::supports::BasicString& theString) {
+        return temp_functions::__valueToBasicString(theValue, theString);
+    }
+
+    const OPENGSI_NAMESPACE::supports::BasicString& numberToBasicString(OPENGSI_NAMESPACE::CppLDouble theValue, OPENGSI_NAMESPACE::supports::BasicString& theString) {
+        return temp_functions::__valueToBasicString(theValue, theString);
+    }
+#ifdef OPENGSI_ENABLE_LLONG
+
+    const OPENGSI_NAMESPACE::supports::BasicString& numberToBasicString(OPENGSI_NAMESPACE::CppLLong theValue, OPENGSI_NAMESPACE::supports::BasicString& theString) {
+        return temp_functions::__valueToBasicString(theValue, theString);
+    }
+
+    const OPENGSI_NAMESPACE::supports::BasicString& numberToBasicString(OPENGSI_NAMESPACE::CppULLong theValue, OPENGSI_NAMESPACE::supports::BasicString& theString) {
+        return temp_functions::__valueToBasicString(theValue, theString);
+    }
+#endif       
 }
 
 #endif  /* __OPEN_GSI_COMSCI_FUNCTIONS_CONVERTERS_NUMBERTOBASICSTRING_H_ */
